@@ -14,7 +14,9 @@ public class AppTest {
  
   @Test
   public void Login() {
- driver.get("http://smartbeardermot/shoppingcart/");
+   // String hostname = "localhost";
+    String hostname = "shopping-cart-sa.herokuapp.com";
+ driver.get("https://". hostname . "/shoppingcart/");
  driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[1]/input")).sendKeys("dermot@localhost");
  driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[2]/input")).sendKeys("password");
  driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/button")).click();
