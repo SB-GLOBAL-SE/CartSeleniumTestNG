@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.shoppingcart.shoppingcart.AppTest" duration-ms="26341" started-at="2019-09-10T14:46:25Z" finished-at="2019-09-10T14:46:52Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="26341" started-at="2019-09-10T14:46:25Z" finished-at="2019-09-10T14:46:52Z">
+      <class name="com.shoppingcart.shoppingcart.AppTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6776ad]" name="beforeClass" is-config="true" duration-ms="4530" started-at="2019-09-10T15:46:25Z" finished-at="2019-09-10T15:46:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6776ad]" name="Login" duration-ms="3759" started-at="2019-09-10T15:46:30Z" finished-at="2019-09-10T15:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Shopping()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6776ad]" name="Shopping" duration-ms="18041" started-at="2019-09-10T15:46:34Z" finished-at="2019-09-10T15:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Shopping -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6776ad]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-09-10T15:46:52Z" finished-at="2019-09-10T15:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.shoppingcart.shoppingcart.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.shoppingcart.shoppingcart.AppTest -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.shoppingcart.shoppingcart.AppTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.shoppingcart.shoppingcart.AppTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Shopping"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.shoppingcart.shoppingcart.AppTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.shoppingcart.shoppingcart.AppTest] -->
