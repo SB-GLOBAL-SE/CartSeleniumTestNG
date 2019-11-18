@@ -41,7 +41,13 @@
      <version>6.8</version>
      <scope>test</scope>
   </dependency> 
-</dependencies>
+  <!-- UniREST -->
+  <dependency>
+  	<groupId>com.konghq</groupId>
+  	<artifactId>unirest-java</artifactId>
+  	<version>3.1.02</version>
+  </dependency>
+  </dependencies>
 
 
   <build>
