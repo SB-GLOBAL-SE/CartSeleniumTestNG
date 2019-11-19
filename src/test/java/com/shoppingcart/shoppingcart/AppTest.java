@@ -2,12 +2,13 @@ package com.shoppingcart.shoppingcart;
 
 import org.openqa.selenium.By;
 //import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
+//import org.testng.annotations.BeforeClass;
+//import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.AfterSuite;
 
 import java.net.MalformedURLException;
@@ -16,34 +17,26 @@ import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
-import static org.junit.Assert.*;
-
 public class AppTest {
-
-  /*public WebDriver driver;
-   * 
-   */
 	
 private RemoteWebDriver driver;
+	
 @BeforeSuite
-
 public void setup() throws MalformedURLException {
 
 String username = "dermot.canniffe%40smartbear.com"; // Your username
 String authkey = "u1b26bf49cce3f32";  // Your authkey
-String testScore = "unset";
 
 DesiredCapabilities caps = new DesiredCapabilities();
 
 caps.setCapability("name", "Shopping Cart Test");
 caps.setCapability("build", "1.0");
-caps.setCapability("browserName", "Safari");
-caps.setCapability("deviceName", "iPad 6th Generation Simulator");
-caps.setCapability("platformVersion", "12.0");
-caps.setCapability("platformName", "iOS");
-caps.setCapability("deviceOrientation", "landscape");
-
+caps.setCapability("browserName", "Chrome");
+caps.setCapability("deviceName", "Nexus 9");
+caps.setCapability("platformVersion", "6.0");
+caps.setCapability("platformName", "Android");
+caps.setCapability("deviceOrientation", "portrait");
+caps.setCapability("record_video", "true");
 
 driver = new RemoteWebDriver(new URL("http://" + username + ":" + authkey +"@hub.crossbrowsertesting.com:80/wd/hub"), caps);
 
@@ -77,18 +70,6 @@ public void Login() {
 
   }
 
-//  @BeforeClass
-//  public void beforeClass() {
-//
-//    System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
-//    driver = new FirefoxDriver();
-//
-//  }
-//
-//  @AfterClass
-//  public void afterClass() {
-//    // driver.quit();
-//  }
 
   @AfterSuite
   public void tearDown() {
