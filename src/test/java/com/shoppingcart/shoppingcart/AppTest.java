@@ -40,8 +40,8 @@ public class AppTest {
 		caps.setCapability("name", "Shopping Cart Test Alpha");
 		caps.setCapability("build", "1.0");
 		caps.setCapability("browserName", "Chrome");
-		caps.setCapability("deviceName", "Nexus 9");
-		caps.setCapability("platformVersion", "6.0");
+		caps.setCapability("deviceName", "Galaxy S9");
+		caps.setCapability("platformVersion", "9.0");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("record_video", "true");
