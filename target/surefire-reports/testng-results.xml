@@ -1,147 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26885" started-at="2019-11-20T08:38:05Z" finished-at="2019-11-20T08:38:32Z">
+  <suite name="Suite" duration-ms="19929" started-at="2019-11-20T11:19:02Z" finished-at="2019-11-20T11:19:22Z">
     <groups>
     </groups>
-    <test name="CBTTest2" duration-ms="3070" started-at="2019-11-20T08:38:05Z" finished-at="2019-11-20T08:38:08Z">
+    <test name="CBTTest2" duration-ms="14453" started-at="2019-11-20T11:19:02Z" finished-at="2019-11-20T11:19:17Z">
       <class name="com.shoppingcart.shoppingcart.AppTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@34b7bfc0]" name="setup" is-config="true" duration-ms="59987" started-at="2019-11-20T08:36:41Z" finished-at="2019-11-20T08:37:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6537cf78]" name="setup" is-config="true" duration-ms="52242" started-at="2019-11-20T11:17:47Z" finished-at="2019-11-20T11:18:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@5afa04c]" name="setup" is-config="true" duration-ms="23622" started-at="2019-11-20T08:37:41Z" finished-at="2019-11-20T08:38:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@2344fc66]" name="setup" is-config="true" duration-ms="23051" started-at="2019-11-20T11:18:39Z" finished-at="2019-11-20T11:19:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@34b7bfc0]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-20T08:38:32Z" finished-at="2019-11-20T08:38:32Z">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA[com.google.gson.Gson.newBuilder()Lcom/google/gson/GsonBuilder;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.gson.Gson.newBuilder()Lcom/google/gson/GsonBuilder;
-	at kong.unirest.json.JSONElement.<clinit>(JSONElement.java:39)
-	at kong.unirest.JsonNode.<init>(JsonNode.java:44)
-	at kong.unirest.JsonResponse.toJsonNode(JsonResponse.java:49)
-	at kong.unirest.JsonResponse.getNode(JsonResponse.java:43)
-	at kong.unirest.JsonResponse.<init>(JsonResponse.java:35)
-	at kong.unirest.apache.BaseApacheClient.transformBody(BaseApacheClient.java:53)
-	at kong.unirest.apache.ApacheClient.request(ApacheClient.java:128)
-	at kong.unirest.BaseRequest.asJson(BaseRequest.java:213)
-	at com.shoppingcart.shoppingcart.AppTest.setScore(AppTest.java:92)
-	at com.shoppingcart.shoppingcart.AppTest.tearDown(AppTest.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6537cf78]" name="tearDown" is-config="true" duration-ms="16578" started-at="2019-11-20T11:19:22Z" finished-at="2019-11-20T11:19:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@5afa04c]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-20T08:38:43Z" finished-at="2019-11-20T08:38:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@2344fc66]" name="tearDown" is-config="true" duration-ms="1521" started-at="2019-11-20T11:19:39Z" finished-at="2019-11-20T11:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.shoppingcart.shoppingcart.AppTest -->
       <class name="com.shoppingcart.shoppingcart.AppTest2">
-        <test-method status="FAIL" signature="Login()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@5afa04c]" name="Login" is-config="true" duration-ms="0" started-at="2019-11-20T08:38:05Z" finished-at="2019-11-20T08:38:05Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SB-IE-9T7CPN2', ip: '172.19.144.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {automationName: XCUITest, browserName: Safari, databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 600, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 11.0, takesScreenshot: true, udid: 2A40EAD7-E23F-4672-A059-403..., webStorageEnabled: false}
-Session ID: 16252278-9abf-412c-9a47-f2260acb75e2
-*** Element info: {Using=xpath, value=html/body/div[2]/div/div[1]/form/div[1]/input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SB-IE-9T7CPN2', ip: '172.19.144.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {automationName: XCUITest, browserName: Safari, databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 600, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 11.0, takesScreenshot: true, udid: 2A40EAD7-E23F-4672-A059-403..., webStorageEnabled: false}
-Session ID: 16252278-9abf-412c-9a47-f2260acb75e2
-*** Element info: {Using=xpath, value=html/body/div[2]/div/div[1]/form/div[1]/input}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.shoppingcart.shoppingcart.AppTest2.Login(AppTest2.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@2344fc66]" name="Login" is-config="true" duration-ms="7379" started-at="2019-11-20T11:19:02Z" finished-at="2019-11-20T11:19:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="SKIP" signature="Shopping()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@5afa04c]" name="Shopping" duration-ms="1" started-at="2019-11-20T08:38:08Z" finished-at="2019-11-20T08:38:08Z">
+        <test-method status="PASS" signature="Shopping()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest2@2344fc66]" name="Shopping" duration-ms="7064" started-at="2019-11-20T11:19:10Z" finished-at="2019-11-20T11:19:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Shopping -->
       </class> <!-- com.shoppingcart.shoppingcart.AppTest2 -->
     </test> <!-- CBTTest2 -->
-    <test name="CBTTest1" duration-ms="26885" started-at="2019-11-20T08:38:05Z" finished-at="2019-11-20T08:38:32Z">
+    <test name="CBTTest1" duration-ms="19929" started-at="2019-11-20T11:19:02Z" finished-at="2019-11-20T11:19:22Z">
       <class name="com.shoppingcart.shoppingcart.AppTest">
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@34b7bfc0]" name="Login" is-config="true" duration-ms="17622" started-at="2019-11-20T08:38:05Z" finished-at="2019-11-20T08:38:22Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6537cf78]" name="Login" is-config="true" duration-ms="9385" started-at="2019-11-20T11:19:02Z" finished-at="2019-11-20T11:19:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Shopping()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@34b7bfc0]" name="Shopping" duration-ms="9262" started-at="2019-11-20T08:38:22Z" finished-at="2019-11-20T08:38:32Z">
+        <test-method status="PASS" signature="Shopping()[pri:0, instance:com.shoppingcart.shoppingcart.AppTest@6537cf78]" name="Shopping" duration-ms="10544" started-at="2019-11-20T11:19:12Z" finished-at="2019-11-20T11:19:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Shopping -->

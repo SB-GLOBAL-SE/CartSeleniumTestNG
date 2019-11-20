@@ -54,20 +54,21 @@ public class AppTest2 {
 
 	@BeforeTest
 	public void Login() {
-
-		// String hostname = "localhost";
-		// driver.get("https://" + hostname + "/shoppingcart/");
-		String hostname = "shopping-cart-sa.herokuapp.com";
-		driver.get("https://" + hostname + "/login.php");
-		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[1]/input")).sendKeys("dermot@localhost");
-		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[2]/input")).sendKeys("password");
-		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/button")).click();
-		Assert.assertEquals(driver.getTitle(), "Awesome Shopping Store - Products");
+		try {
+			String hostname = "shopping-cart-sa.herokuapp.com";
+			driver.get("https://" + hostname + "/login.php");
+			driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[1]/input")).sendKeys("dermot@localhost");
+			driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/div[2]/input")).sendKeys("password");
+			driver.findElement(By.xpath("html/body/div[2]/div/div[1]/form/button")).click();
+			Assert.assertEquals(driver.getTitle(), "Awesome Shopping Store - Products");
+			testScore = "pass";
+		} catch (AssertionError ae) {
+			testScore = "fail";
+		}
 	}
 
 	@Test
 	public void Shopping() {
-		// driver.findElement(By.xpath("html/body/div[2]/div/div[6]/div/div/div/div[2]/a")).click();
 		try {
 			driver.findElement(By.xpath("//div[6]//div[1]//div[1]//a[1]//img[1]")).click();
 			String getProduct = driver.findElement(By.xpath("//h4[@class='list-group-item-heading']")).getText();
@@ -83,19 +84,19 @@ public class AppTest2 {
 		}
 	}
 
-	public kong.unirest.JsonNode setScore(String seleniumTestId, String score, String username, String authkey)
+	public String setScore(String seleniumTestId, String score, String username, String authkey)
 			throws UnirestException {
 		// Mark a Selenium test as Pass/Fail
-		HttpResponse<kong.unirest.JsonNode> response = Unirest
-				.put("http://crossbrowsertesting.com/api/v3/selenium/{seleniumTestId}").basicAuth(username, authkey)
-				.routeParam("seleniumTestId", seleniumTestId).field("action", "set_score").field("score", score)
-				.asJson();
+		HttpResponse<String> response = Unirest.put("http://crossbrowsertesting.com/api/v3/selenium/{seleniumTestId}")
+				.basicAuth(username, authkey).routeParam("seleniumTestId", seleniumTestId).field("action", "set_score")
+				.field("score", score).asString();
+		// .asJson();
 		return response.getBody();
 	}
 
 	@AfterSuite
 	public void tearDown() {
-		LOGGER.info(setScore(driver.getSessionId().toString(), testScore, username, authkey));	
+		LOGGER.info(setScore(driver.getSessionId().toString(), testScore, username, authkey));
 		driver.quit();
 	}
 
