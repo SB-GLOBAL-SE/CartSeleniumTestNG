@@ -1,0 +1,10 @@
+com\testdroid\appium\android\sample\AndroidAppiumExampleTest.class
+com\testdroid\appium\BaseAndroidTest.class
+com\shoppingcart\shoppingcart\AndroidAppiumExampleTest.class
+com\testdroid\appium\FileUploader$1.class
+com\testdroid\appium\FileUploader$UploadResponse.class
+com\testdroid\appium\BaseIOSTest.class
+com\testdroid\appium\ios\sample\IosAppiumExampleTest.class
+com\shoppingcart\shoppingcart\AppTest.class
+com\testdroid\appium\BaseTest.class
+com\testdroid\appium\FileUploader.class

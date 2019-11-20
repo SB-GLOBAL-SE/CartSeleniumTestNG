@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [com.shoppingcart.shoppingcart.AppTest]">
-  <test name="Command line test(failed)">
+<suite thread-count="2" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test name="BitBarTest(failed)" parallel="tests">
     <classes>
       <class name="com.shoppingcart.shoppingcart.AppTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="Shopping"/>
-          <include name="beforeClass"/>
+          <include name="Login"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.shoppingcart.shoppingcart.AppTest -->
+      <class name="com.shoppingcart.shoppingcart.AndroidAppiumExampleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="mainPageTest"/>
+        </methods>
+      </class> <!-- com.shoppingcart.shoppingcart.AndroidAppiumExampleTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [com.shoppingcart.shoppingcart.AppTest] -->
+  </test> <!-- BitBarTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
