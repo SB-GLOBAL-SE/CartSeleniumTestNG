@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite thread-count="2" name="Suite" parallel="tests">
-    <test name="CBTTest">
+    <test name="CBTTest1">
     <classes>
       <class name="com.shoppingcart.shoppingcart.AppTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="BitBarTest">
+  <test name="CBTTest2">
     <classes>
-      <class name="com.shoppingcart.shoppingcart.AndroidAppiumExampleTest"/>
+      <class name="com.shoppingcart.shoppingcart.AppTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
