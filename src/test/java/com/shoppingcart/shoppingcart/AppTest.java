@@ -43,7 +43,7 @@ public class AppTest {
 		caps.setCapability("deviceName", "Galaxy S9");
 		caps.setCapability("platformVersion", "9.0");
 		caps.setCapability("platformName", "Android");
-		caps.setCapability("deviceOrientation", "portrait");
+		caps.setCapability("deviceOrientation", "landscape");
 		caps.setCapability("record_video", "true");
 
 		driver = new RemoteWebDriver(
